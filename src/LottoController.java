@@ -83,8 +83,8 @@ public class LottoController {
                 }
             }
         }
-        String resultValue = lottoFrm.resulstLbl.getText();
-        lottoFrm.resulstLbl.setText(resultValue + result.toString());
+        String resultValue = lottoFrm.resultLbl.getText();
+        lottoFrm.resultLbl.setText(resultValue + result.toString());
 
         for (int i = 0; i < drawedList.size(); i++) {
             String drawValue = lottoFrm.drawLbl.getText();

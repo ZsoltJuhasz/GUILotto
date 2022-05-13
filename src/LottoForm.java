@@ -19,7 +19,7 @@ public class LottoForm extends JFrame {
     public JPanel drawPnl = new JPanel();
     public JPanel buttonPnl = new JPanel();
     public JLabel drawLbl = new JLabel("Számok: ");
-    public JLabel resulstLbl = new JLabel("Találatok: ");
+    public JLabel resultLbl = new JLabel("Találatok: ");
     public JButton exitBtn = new JButton("Kilépés");
     public JButton drawBtn = new JButton("Húzás");
 
@@ -40,7 +40,7 @@ public class LottoForm extends JFrame {
         this.add(mainPnl);
 
         northPnl.setLayout(new FlowLayout(FlowLayout.CENTER));
-        northPnl.add(resulstLbl);
+        northPnl.add(resultLbl);
         mainPnl.add(northPnl, BorderLayout.NORTH);
 
         eastPnl.setSize(10, 400);

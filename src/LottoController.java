@@ -101,9 +101,8 @@ public class LottoController {
         for (int i = 0; i < drawedList.size(); i++) {
 
             if (i < drawedList.size() - 1) {
-                sqlData += String.valueOf(drawedList.get(i)) + ":"; // String-é kell alakítani a
-                                                                    // drawedList(i)-dik tagját
-
+                sqlData += String.valueOf(drawedList.get(i)) + ":"; // Amíg el nem érjük a húzott számok-1(vagyis az ötödik húzott számot)
+                                                                    // addig :-al választjuk el a számokat, az utolsót meg csak kiírjuk
             } else {
                 sqlData += String.valueOf(drawedList.get(i));
             }
